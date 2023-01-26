@@ -1,0 +1,29 @@
+.EmptyList {
+    width: 45.5rem;
+    margin: 64px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.EmptyList img {
+    width: 56px;
+    height: 56px;
+}
+
+.text {
+    font-size: 1rem;
+    color: var(--gray-300);
+    line-height: 140%;
+}
+
+.text p:nth-child(1) {
+    font-weight: 700;
+}
+
+.text p:nth-child(2) {
+    font-weight: 400;
+}

@@ -1,0 +1,113 @@
+header {
+  height: 12.5rem;
+  background-color: var(--gray-700);
+  grid-area: 2;
+
+  display: flex;
+  justify-content: center;
+  padding-top: 4.5rem;
+}
+
+img {
+  height: 3rem;
+  width: 7.875rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.createTask {
+  width: 45.5rem;
+  height: 3.375rem;
+  margin-top: -1.6875rem;
+  margin-bottom: 4rem;
+  
+  display: flex;
+  gap: 8px;
+}
+
+.createTask input { 
+  flex: auto;
+  border-radius: 8px;
+  padding: 16px;
+
+  color: var(--gray-100);
+
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-700);
+}
+
+.createTask button[type=submit] {
+  width: 5.625rem;
+  height: 3.25rem;
+  border-radius: 8px;
+
+  background-color: var(--blueDark);
+  border: none;
+
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--gray-100);
+  
+  cursor: pointer;
+}
+
+.createTask button[type=submit]:hover {
+  background: var(--blue);
+}
+
+.createTask button[type=submit]:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.taskList {
+  width: 45.5rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.countTask {
+  width: 45.5rem;
+  margin-bottom: 1.5rem;
+
+  font-weight: 700;
+  font-size: 14px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.countTask div{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.countTask div:nth-child(1) {
+  color: var(--blue);
+}
+
+.countTask div:nth-child(2) {
+  color: var(--purple);
+}
+
+.countTask span {
+  color: var(--gray-100);
+  background-color: var(--gray-400);
+  border-radius: 10px;
+  padding: 2px 8px;
+}
+
+.list {
+  height: 100vh;
+  border-radius: 8px;
+  border-top: 1px solid var(--gray-400);
+}
